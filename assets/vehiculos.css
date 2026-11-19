@@ -1,0 +1,18 @@
+/* Filtro y propietario forman una sola columna, también al reducir el ancho. */
+.form-grid.vehicle-fields {
+ grid-template-areas: "plate color customer" "type brand customer" "state . customer";
+ align-items:start;
+}
+.vehicle-fields .vehicle-plate {grid-area:plate;}
+.vehicle-fields .vehicle-field {display:grid;gap:18px;min-width:0;align-content:start;}
+.vehicle-fields [data-field="id_color"] {grid-area:color;}
+.vehicle-fields [data-field="id_cliente"] {grid-area:customer;}
+.vehicle-fields [data-field="id_tipo"] {grid-area:type;}
+.vehicle-fields [data-field="id_marca"] {grid-area:brand;}
+.vehicle-fields [data-field="id_estado"] {grid-area:state;}
+@media(max-width:1100px) {
+ .form-grid.vehicle-fields {grid-template-areas:"plate customer" "color customer" "type brand" "state .";}
+}
+@media(max-width:760px) {
+ .form-grid.vehicle-fields {grid-template-areas:"plate" "color" "customer" "type" "brand" "state";}
+}

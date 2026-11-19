@@ -1,0 +1,11 @@
+DirectoryIndex disabled
+RewriteEngine On
+RewriteRule ^$ /Parqueadero_jc_web/php/login.php [R=302,L]
+
+# Direcciones HTML anteriores: acceso directo a las páginas PHP.
+RewriteRule ^(?:html/)?index\.html$ /Parqueadero_jc_web/php/login.php [R=307,L]
+RewriteRule ^(?:html/)?salida\.html$ /Parqueadero_jc_web/php/ingresos.php [R=307,L]
+RewriteRule ^(?:html/)?(clientes|configuracion|espacios|incidentes|ingresos|inicio|pagos|tarifas|usuarios|vehiculos)\.html$ /Parqueadero_jc_web/php/$1.php [R=307,L]
+
+# Compatibilidad con direcciones PHP que antes estaban en la raíz.
+RewriteRule ^(clientes|configuracion|espacios|incidentes|ingresos|inicio|pagos|salida|tarifas|usuarios|vehiculos|login|clave|logout)\.php$ /Parqueadero_jc_web/php/$1.php [R=307,L]

@@ -1,0 +1,4 @@
+.crud-notice { padding:20px; } .crud-detail { padding:24px; } .row-actions { flex-wrap:wrap; }
+.rate-hour-field[hidden] { display: none !important; }
+
+.rate-period-extra[hidden] { display: none !important; }

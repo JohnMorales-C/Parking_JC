@@ -1,0 +1,23 @@
+# Configuración y datos privados
+.env
+.env.*
+!.env.example
+database.php
+config.local.php
+*.local.php
+.backups/
+backups/
+tmp/
+output/
+*.log
+sess_*
+*.dump
+*.bak
+*.sql.gz
+*_completo.sql
+*_datos_iniciales.sql
+.vscode/
+.idea/
+.codex/
+.aws/
+.ssh/

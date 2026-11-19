@@ -1,0 +1,8 @@
+.audit-changes {
+  min-width: 16rem;
+  max-width: 34rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  line-height: 1.5;
+}
